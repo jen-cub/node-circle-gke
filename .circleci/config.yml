@@ -29,7 +29,7 @@ jobs:
       - PROJECT_NAME: "gke-3-app"
       - GOOGLE_PROJECT_ID: "jendevops1"
       - GOOGLE_COMPUTE_ZONE: "us-central1-a"
-      - GOOGLE_CLUSTER_NAME: "gke3"
+      - GOOGLE_CLUSTER_NAME: "gke-3"
     steps:
       - checkout
       - run:
