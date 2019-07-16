@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: ${PROJECT_NAME}
+  name: gke-3-app
 spec:
   selector:
-    app: ${PROJECT_NAME}
+    app: gke-3-app
   ports:
   - protocol: TCP
     port: 80
@@ -14,22 +14,22 @@ spec:
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: ${PROJECT_NAME}
+  name: gke-3-app
   labels:
-    app: ${PROJECT_NAME}
+    app: gke-3-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: ${PROJECT_NAME}
+      app: gke-3-app
   template:
     metadata:
       labels:
-        app: ${PROJECT_NAME}
+        app: gke-3-app
     spec:
       containers:
-      - name: ${PROJECT_NAME}
-        image: eu.gcr.io/${PROJECT}/${PROJECT_NAME}:${CIRCLE_SHA1}
+      - name: gke-3-app
+        image: eu.gcr.io/jendevops1/gke-3-app:d7614232afa55ce172eb9b2a16a57aeb4b6f850c
         ports:
         - name: http
           containerPort: 3000
