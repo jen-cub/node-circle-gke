@@ -26,7 +26,7 @@ jobs:
     docker:
       - image: google/cloud-sdk
     environment:
-      - PROJECT_NAME: "gke-3-app"
+      - PROJECT_NAME: "gke3app"
       - GOOGLE_PROJECT_ID: "jendevops1"
       - GOOGLE_COMPUTE_ZONE: "australia-southeast1-c"
       - GOOGLE_CLUSTER_NAME: "gke-3"

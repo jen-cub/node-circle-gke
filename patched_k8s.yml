@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: gke-3-app
-        image: eu.gcr.io/jendevops1/gke-3-app:d7614232afa55ce172eb9b2a16a57aeb4b6f850c
+        image: gcr.io/jendevops1/gke-3-app:d7614232afa55ce172eb9b2a16a57aeb4b6f850c
         ports:
         - name: http
           containerPort: 3000
