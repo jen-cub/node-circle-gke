@@ -28,7 +28,7 @@ jobs:
     environment:
       - PROJECT_NAME: "gke-3-app"
       - GOOGLE_PROJECT_ID: "jendevops1"
-      - GOOGLE_COMPUTE_ZONE: "australia-southeast1"
+      - GOOGLE_COMPUTE_ZONE: "australia-southeast1-c"
       - GOOGLE_CLUSTER_NAME: "gke-3"
     steps:
       - checkout
